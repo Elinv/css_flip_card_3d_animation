@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjetas 3D rotando automaticamente - Elinv</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <main>
+
+        <div class="tarjeta_contenedor">
+
+            <div class="tarjeta_cuerpo_general">
+                <div class="tarjeta">
+                    <div class="tarjeta_frontal" style="background-image: url(images/elinv-2022.jpg);">
+                        <div class="contenido_tarjeta_frente">
+                            <h1>Elinv<br>
+                                <a href='https://www.elinv.musica.ar' title='Web Elinv' target='_blank'> Web Elinv </a>
+                                <br>
+                                <a href='https://www.reverbnation.com/elinv' title='Elinv en ReverbNation'
+                                    target='_blank'> Elinv en ReverbNation </a>
+                                <br>
+                                <a href='https://www.n1m.com/elinv' title='Elinv en N1M' target='_blank'> Elinv en N1M
+                                </a>
+                                <br>
+                                <a href='https://github.com/Elinv' title='Elinv en Github' target='_blank'> Elinv en
+                                    Github </a>
+                                <br>
+                        </div>
+                    </div>
+                    <div class="tarjeta_atras" style="background-image: url(images/elinv-2022-atras.jpg);">
+                        <div class="contenido_tarjeta_atras">
+                            <p style="color:chartreuse; font-size: 50px;">Elinv</p>
+                            <p style="font-size: 23px; color:darkorange;">Elinv - Músico, compositor, cantante,
+                                productor propio. Solo para todo aquello que suene. Play list music de Elinv en
+                                ReverbNation. Mails, saludos, soporte a Elinv y más.Prensa</p>
+
+                            <a href="https://elinv.musica.ar" target="_blank">
+                                <input type="button" value="Ver mas Elinv" />
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- sliders control traslada cuerpo en eje Z-->
+            <div class="slidecontainer">
+                <input type="range" min="1" max="500" value="160" class="slider" id="translateZ">
+                <p style="color:chartreuse">Traslado eje Z --> Valor: <span style="color:aliceblue"
+                        id="translateZ_Valor"></span></p>
+            </div>
+
+            <!-- sliders control duración de la rotación-->
+            <div class="slidecontainer">
+                <input type="range" min="1" max="30" value="10" class="slider" id="rotDurac">
+                <p style="color:chartreuse">Duración de la rotación: <span style="color:aliceblue"
+                        id="rotDuracValor"></span></p>
+            </div>
+
+
+        </div>
+        <script>
+            /* Para controlar translate Z */
+            var TranslZSlider = document.getElementById("translateZ");
+            var TranslZValor = document.getElementById("translateZ_Valor");
+            TranslZValor.innerHTML = TranslZSlider.value;
+
+            TranslZSlider.oninput = function () {
+                TranslZValor.innerHTML = this.value;
+                document.body.style.setProperty('--transl_Z', this.value + "px")
+            }
+
+            /* Para controlar duración de la rotación */
+            var rotDuracSlider = document.getElementById("rotDurac");
+            var rotDuracValor = document.getElementById("rotDuracValor");
+            rotDuracValor.innerHTML = rotDuracSlider.value;
+
+            rotDuracSlider.oninput = function () {
+                rotDuracValor.innerHTML = this.value;
+                document.body.style.setProperty('--girar', this.value + "s")
+            }
+        </script>
+    </main>
+
+</body>
+
+</html>
