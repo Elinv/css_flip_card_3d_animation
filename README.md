@@ -10,7 +10,7 @@
 </a>
 
 ## Web Elinv.
-<a href="https://elinv.musica.ar">
+<a href="https://elinv.musica.ar" href="_blank">
    Web Elinv
 </a>
 
@@ -22,17 +22,17 @@
 
 ## - Ver info de Elinv en Google Search:
 
-<a href="https://www.google.com.ar/search?q=elinv href="_blank"">
+<a href="https://www.google.com.ar/search?q=elinv" href="_blank">
    Enlace a la info de Elinv  -> en Google Search
 </a>
 
 ## - Ver canciones de Elinv:
 
-<a href="https://www.reverbnation.com/elinv href="_blank"">
+<a href="https://www.reverbnation.com/elinv" href="_blank">
    Enlace a las canciones de Elinv  -> en Reverbnation
 </a>
 
-<a href="https://www.n1m.com/elinv/ href="_blank"">
+<a href="https://www.n1m.com/elinv/" href="_blank">
    Enlace a la web de Elinv  -> en N1M
 </a>
 
