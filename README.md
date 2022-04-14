@@ -4,17 +4,14 @@
     que rota 360 grados mostrando dos imágenes y textos. 
     Regulable distancia eje Z y duración.
 
-##Ejemplo de uso:
-
-<a href="https://elinv.musica.ar">
-   Web Elinv
-</a>
-
-
-##Web Elinv.
-
+## Ejemplo de uso:
 <a href="https://www.elinv.musica.ar/github/cssflipcardanima/" href="_blank">
    Css flip card 3d animation.
+</a>
+
+## Web Elinv.
+<a href="https://elinv.musica.ar">
+   Web Elinv
 </a>
 
 ## - Ver info de Elinv en Microsoft Bing Search:
